@@ -1,0 +1,111 @@
+.footer {
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: $_second_bg_color;
+  @include media(desktop) {
+    padding-top: 24px;
+    padding-bottom: 21px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo--origin {
+    display: none;
+
+    @include media(desktop) {
+      display: flex;
+      margin-bottom: 26px;
+    }
+  }
+  &__logo--min {
+    display: flex;
+    margin-bottom: 20px;
+
+    @include media(desktop) {
+      display: none;
+    }
+  }
+
+  &__line {
+    background-color: $_main_bg_color;
+    position: absolute;
+    top: 64px;
+    width: 100%;
+    height: 3px;
+
+    @include media(desktop) {
+      top: 188px;
+    }
+  }
+}
+
+.footer-navigation {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    margin-bottom: 42px;
+  }
+
+  &__list {
+    display: flex;
+
+    gap: 30px;
+  }
+
+  &__link {
+    @include font(20, 24);
+    transition-property: all;
+    transition-duration: $transition;
+    transition-timing-function: $transition-cubic-bezier;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.text {
+  text-align: center;
+  padding-top: 12px;
+  @include media(desktop) {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 18px;
+  }
+
+  &__rights {
+    @include font(12, 14);
+    margin-bottom: 9px;
+    @include media(desktop) {
+      @include font(20, 24);
+      margin: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    @include font(12, 14);
+    transition-property: all;
+    transition-duration: $transition;
+    transition-timing-function: $transition-cubic-bezier;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    @include media(desktop) {
+      @include font(20, 24);
+      margin: 0;
+    }
+  }
+}
