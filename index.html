@@ -7,45 +7,89 @@
     <title>Bubble-CoCo</title>
     
     <script type="module" crossorigin src="/Bubble-CoCo/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Bubble-CoCo/assets/index-70c0e7b7.css">
+    <link rel="stylesheet" href="/Bubble-CoCo/assets/index-0faa0d32.css">
   </head>
   <body>
     <!-- header -->
 
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#" class="nav-link">Home</a>
+  <div class="container header__wrapper">
+    <a class="header__logo--min" href="../index.html"
+      ><img src="../img/logo-min.svg" alt="site-logo"
+    /></a>
+    <a class="header__logo--origin" href="../index.html"
+      ><img src="../img/logo.svg" alt="site-logo"
+    /></a>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Home</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Advantages</a>
+        <li class="navigation__item">
+          <a href="#advantages" class="navigation__link">Advantages</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About the Game</a>
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link">About the Game</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">How to Play</a>
+        <li class="navigation__item">
+          <a href="#how-to-play" class="navigation__link">How to Play</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Benefits</a>
+        <li class="navigation__item">
+          <a href="#benefits" class="navigation__link">Benefits</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">FAQ</a>
+        <li class="navigation__item">
+          <a href="#faq" class="navigation__link">FAQ</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Gallery</a>
+        <li class="navigation__item">
+          <a href="#gallery" class="navigation__link">Gallery</a>
         </li>
       </ul>
     </nav>
+    <button class="open-button">
+      <img src="../img/icons/menu.svg" alt="" />
+    </button>
   </div>
 </header>
 
 
     <!-- hero -->
 
-    <section></section>
+    <section class="hero">
+  <div class="container hero__wrap">
+    <div class="hero__content">
+      <h1 class="hero__title">Bubble Shooter</h1>
+      <p class="hero__description">
+        Dive into "Bubble Coco" and experience thrilling puzzle-solving
+        adventures with Coco and her chicks! Start playing now for a
+        heartwarming journey filled with challenging bubble-shooting puzzles!
+      </p>
+      <a class="hero__link--min" href=""
+        ><img src="../img/google-store-min.svg" alt="google-store"
+      /></a>
+      <a class="hero__link--origin" href=""
+        ><img src="../img/google-store.svg" alt="google-store"
+      /></a>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ../img/hero-tel-origin-1x.png 1x,
+          ../img/hero-tel-origin-2x.png 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="../img/hero-tel-min-1x.png 1x, ../img/hero-tel-min-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img
+        class="hero__image"
+        src="../img/hero-tel-min-1x.png"
+        alt="hero-tel"
+      />
+    </picture>
+  </div>
+</section>
 
 
     <!-- advantages -->
