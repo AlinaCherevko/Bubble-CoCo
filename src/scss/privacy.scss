@@ -1,0 +1,103 @@
+.policy {
+  padding-top: 89px;
+  padding-bottom: 40px;
+  background-image: url(../img/background-mob-1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/background-mob-2x.png);
+  }
+
+  @include media(desktop) {
+    padding-top: 208px;
+    padding-bottom: 100px;
+    text-align: center;
+    padding-top: 142px;
+    padding-bottom: 59px;
+    background-image: url(../img/background-origin-1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/background-origin-2x.png);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include media(desktop) {
+      gap: 16px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+    @include font(24, 29);
+
+    &::before {
+      content: url(../img/blue-bubble-min.svg);
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    &::after {
+      content: url(../img/red-bubble-min.svg);
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+    @include media(desktop) {
+      @include font(64, 77);
+      margin-bottom: 28px;
+      &::before {
+        content: url(../img/blue-bubble-origin.svg);
+        margin-right: 18px;
+      }
+      &::after {
+        content: url(../img/red-bubble-origin.svg);
+        margin-left: 18px;
+      }
+    }
+  }
+
+  &__title--secondary {
+    margin-top: 8px;
+    @include font(22, 28);
+
+    @include media(desktop) {
+      @include font(36, 43);
+      margin-top: 12px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  @include media(desktop) {
+    gap: 16px;
+  }
+
+  &__description {
+    @include font(12, 14);
+
+    @include media(desktop) {
+      @include font(24, 29);
+    }
+  }
+
+  &__bold {
+    @include media(desktop) {
+      font-weight: 600;
+    }
+  }
+}
