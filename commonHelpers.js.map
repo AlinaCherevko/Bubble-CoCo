@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers.js","sources":["../src/main.js"],"sourcesContent":["const closeBtn = document.querySelector('.close-button');\r\nconst openBtn = document.querySelector('.open-button');\r\nconst mobMenu = document.querySelector('.mob-menu');\r\n"],"names":[],"mappings":"0uBAAiB,SAAS,cAAc,eAAe,EACvC,SAAS,cAAc,cAAc,EACrC,SAAS,cAAc,WAAW"}
