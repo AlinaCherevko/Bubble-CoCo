@@ -38,6 +38,13 @@
 
   &__link {
     @include font(20, 24);
+    transition-property: all;
+    transition-duration: $transition;
+    transition-timing-function: $transition-cubic-bezier;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

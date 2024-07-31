@@ -2,6 +2,8 @@
 @import './header.scss';
 @import './hero.scss';
 @import './advanteges.scss';
+@import './picture.scss';
+@import './footer.scss';
 
 :root {
   font-family: $_main_font_family;
@@ -18,4 +20,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.hidden {
+  overflow: hidden;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
