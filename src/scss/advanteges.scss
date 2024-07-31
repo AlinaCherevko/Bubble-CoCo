@@ -1,0 +1,91 @@
+.advantages {
+  width: 100%;
+
+  &__box {
+    margin-top: 20px;
+  }
+
+  &__title {
+    @include font(22, 26);
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 400;
+    @include media(desktop) {
+      @include font(64, 77);
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: relative;
+    flex-wrap: wrap;
+    @include media(desktop) {
+      height: 430px;
+      gap: 120px;
+      row-gap: 70px;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    @include media(desktop) {
+      width: 456px;
+    }
+  }
+
+  &__img {
+    margin-right: 16px;
+    width: 24px;
+    @include media(desktop) {
+      width: 72px;
+      margin-right: 24px;
+    }
+  }
+
+  &__text {
+    @include font(12, 14);
+    font-weight: 400;
+    // font-size: 12px;
+    @include media(desktop) {
+      @include font(24, 29);
+      // font-size: 24px;
+      overflow-wrap: break-word;
+    }
+  }
+
+  &__chick {
+    position: absolute;
+    width: 72px;
+    left: 240px;
+    top: 220px;
+    overflow: hidden;
+    @include media(desktop) {
+      width: 220px;
+      left: 960px;
+      top: 270px;
+    }
+  }
+
+  @include media(desktop) {
+    padding-top: 100px;
+  }
+}
+
+.adv-container {
+  background-color: #f6ffd0;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 16px 10px;
+  @include media(desktop) {
+    padding: 37px 48px;
+    width: 1127px;
+  }
+}
