@@ -1,7 +1,7 @@
 .policy {
   padding-top: 89px;
   padding-bottom: 40px;
-  background-image: url(../img/background-mob-1x.png);
+  background-image: url(../img/backgroundImg/background-mob-1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,7 +9,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../img/background-mob-2x.png);
+    background-image: url(../img/backgroundImg/background-mob-2x.png);
   }
 
   @include media(desktop) {
@@ -18,12 +18,12 @@
     text-align: center;
     padding-top: 142px;
     padding-bottom: 59px;
-    background-image: url(../img/background-origin-1x.png);
+    background-image: url(../img/backgroundImg/background-origin-1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/background-origin-2x.png);
+      background-image: url(../img/backgroundImg/background-origin-2x.png);
     }
   }
 
@@ -43,13 +43,13 @@
     @include font(24, 29);
 
     &::before {
-      content: url(../img/blue-bubble-min.svg);
+      content: url(../img/privacyImg/blue-bubble-min.svg);
       display: inline-block;
       vertical-align: middle;
       margin-right: 6px;
     }
     &::after {
-      content: url(../img/red-bubble-min.svg);
+      content: url(../img/privacyImg/red-bubble-min.svg);
       display: inline-block;
       vertical-align: middle;
       margin-left: 6px;

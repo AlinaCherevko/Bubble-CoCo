@@ -1,37 +1,37 @@
 .picture {
   height: 181px;
-  background-image: url(../img/picture-min-1x.jpg);
+  background-image: url(../img/pictureImg/picture-min-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../img/hero-2x.jpg);
+    background-image: url(../img/pictureImg/picture-min-2x.jpg);
   }
 
   @include media(mobile) {
     height: 181px;
     padding-top: 142px;
     padding-bottom: 59px;
-    background-image: url(../img/picture-origin-1x.jpg);
+    background-image: url(../img/pictureImg/picture-origin-1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/picture-origin-2x.jpg);
+      background-image: url(../img/pictureImg/picture-origin-2x.jpg);
     }
   }
   @include media(desktop) {
     height: 810px;
     padding-top: 142px;
     padding-bottom: 59px;
-    background-image: url(../img/picture-origin-1x.jpg);
+    background-image: url(../img/pictureImg/picture-origin-1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/picture-origin-2x.jpg);
+      background-image: url(../img/pictureImg/picture-origin-2x.jpg);
     }
   }
 }
