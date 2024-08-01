@@ -1,23 +1,8 @@
 .gallery {
   padding-bottom: 45px;
-  background-image: url(../img/backgroundImg/background-mob-1x.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../img/backgroundImg/background-mob-2x.png);
-  }
   @include media(desktop) {
     padding-bottom: 100px;
-    background-image: url(../img/backgroundImg/background-origin-1x.png);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../img/backgroundImg/background-origin-2x.png);
-    }
   }
   &__swiper {
     display: flex;
