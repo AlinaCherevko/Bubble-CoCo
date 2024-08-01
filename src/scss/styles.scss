@@ -6,6 +6,8 @@
 @import './advanteges.scss';
 @import './picture.scss';
 @import './footer.scss';
+@import './aboutTheGame.scss';
+@import './howToPlay.scss';
 
 :root {
   font-family: $_main_font_family;
@@ -15,6 +17,22 @@
   font-style: normal;
 
   color: $_main_text_color;
+
+  background-image: url(../img/background-mob-1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/background-mob-2x.png);
+  }
+  @include media(desktop) {
+    background-image: url(../img/background-origin-1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/background-origin-2x.png);
+    }
+  }
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
