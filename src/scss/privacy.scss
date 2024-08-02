@@ -58,11 +58,11 @@
       @include font(64, 77);
       margin-bottom: 28px;
       &::before {
-        content: url(../img/blue-bubble-origin.svg);
+        content: url(../img/privacyImg/blue-bubble-origin.svg);
         margin-right: 18px;
       }
       &::after {
-        content: url(../img/red-bubble-origin.svg);
+        content: url(../img/privacyImg/red-bubble-origin.svg);
         margin-left: 18px;
       }
     }
