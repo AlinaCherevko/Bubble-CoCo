@@ -1,13 +1,7 @@
 const closeBtn = document.querySelector('.close-button');
 const openBtn = document.querySelector('.open-button');
 const mobMenu = document.querySelector('.mob-menu');
-const linkEl = document.querySelector('.menu-navigation__item');
-// const advantagesEl = document.querySelector('.advantages');
-// const aboutEl = document.querySelector('.about-the-game');
-// const howPlayEl = document.querySelector('.menu-navigation__item');
-// const benefitsEl = document.querySelector('.benefits');
-// const faqEl = document.querySelector('.faq');
-// const galleryEl = document.querySelector('.gallery');
+const linkEls = document.querySelectorAll('.menu-navigation__item a');
 
 openBtn.addEventListener('click', onOpenBtnClick);
 closeBtn.addEventListener('click', onCloseBtnClick);
@@ -18,8 +12,11 @@ function onOpenBtnClick() {
 function onCloseBtnClick() {
   mobMenu.classList.add('is-hidden');
 }
-mobMenu.addEventListener('click', onLinkClick);
+
+linkEls.forEach(link => {
+  link.addEventListener('click', onLinkClick);
+});
 
 function onLinkClick() {
-  if (target === linkEl) onCloseBtnClick();
+  onCloseBtnClick();
 }
