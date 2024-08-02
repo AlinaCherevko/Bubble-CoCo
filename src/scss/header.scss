@@ -60,7 +60,8 @@
 }
 .mob-menu {
   position: absolute;
-  top: 23px;
+  right: 0;
+  top: 0;
   width: 241px;
   background-color: $_second_bg_color;
   @include media(desktop) {
