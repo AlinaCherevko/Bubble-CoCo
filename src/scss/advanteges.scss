@@ -73,9 +73,10 @@
     top: 220px;
 
     @include media(desktop) {
-      width: 220px;
-      left: 960px;
-      top: 270px;
+      width: 270px;
+      height: 272px;
+      left: 940px;
+      top: 230px;
     }
   }
 
