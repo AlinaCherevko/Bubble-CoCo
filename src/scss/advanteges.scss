@@ -68,7 +68,8 @@
   &__chick {
     position: absolute;
     width: 72px;
-    left: 240px;
+    height: 81px;
+    left: 235px;
     top: 220px;
 
     @include media(desktop) {
