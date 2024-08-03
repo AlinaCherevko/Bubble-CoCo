@@ -17,6 +17,14 @@ linkEls.forEach(link => {
   link.addEventListener('click', onLinkClick);
 });
 
-function onLinkClick() {
+function onLinkClick(e) {
   onCloseBtnClick();
+
+  linkEls.forEach(link => link.classList.remove('active'));
+
+  e.currentTarget.classList.add('active');
 }
+
+window.addEventListener('scroll', function () {
+  linkEls.forEach(link => link.classList.remove('active'));
+});
