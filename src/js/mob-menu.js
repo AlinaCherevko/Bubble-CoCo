@@ -2,7 +2,7 @@ const closeBtn = document.querySelector('.close-button');
 const openBtn = document.querySelector('.open-button');
 const mobMenu = document.querySelector('.mob-menu');
 const menuLinkEls = document.querySelectorAll('.menu-navigation__item a');
-const navLinks = document.querySelectorAll('navigation__item a');
+const navLinks = document.querySelectorAll('.navigation__item a');
 
 openBtn.addEventListener('click', onOpenBtnClick);
 closeBtn.addEventListener('click', onCloseBtnClick);
